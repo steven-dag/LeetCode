@@ -18,5 +18,9 @@ int main()
   vector<int> spaces = {8,13,15};
 
   cout << leet.addSpaces(s, spaces);
+  
+  // Minimum time to Fill Cups
+  vector<int> amount = {1, 4, 2};
+  cout << leet.fillCups(amount);
   return 0;
 }
