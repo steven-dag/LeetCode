@@ -21,3 +21,4 @@ string LeetCode::addSpaces(string s, vector<int>& spaces)
         ans += s[i];
     }
     return ans;
+}
