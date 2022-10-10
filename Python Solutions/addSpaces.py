@@ -18,9 +18,9 @@ class Solution:
     
     def addSpaces_v2(self, s: str, spaces: List[int]) -> str:
         ans = s
-		for i in range(len(spaces)-1, -1, -1):
-			ans = ans[0:spaces[i]] + ' ' + ans[spaces[i]:]
-		return ans
+	for i in range(len(spaces)-1, -1, -1):
+		ans = ans[0:spaces[i]] + ' ' + ans[spaces[i]:]
+	return ans
     
 
 if __name__ == '__main__':
