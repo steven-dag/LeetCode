@@ -22,3 +22,16 @@ string LeetCode::addSpaces(string s, vector<int>& spaces)
     }
     return ans;
 }
+
+int fillCups(vector<int>& amount) {
+    int seconds = 0;
+    sort(amount.begin(), amount.end(), greater<int>());
+    while (amount[0] > 0)
+    {
+        amount[0] -= 1;
+        amount[1] -= 1;
+        seconds += 1;
+        sort(amount.begin(), amount.end(), greater<int>());
+    }
+    return seconds;
+}
