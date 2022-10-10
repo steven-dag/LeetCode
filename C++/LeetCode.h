@@ -8,4 +8,5 @@ class LeetCode
 {
     public:
         int maxProduct(vector<int>& nums);
+        string addSpaces(string s, vector<int>& spaces);
 };
