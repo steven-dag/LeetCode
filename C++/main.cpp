@@ -22,5 +22,10 @@ int main()
   // Minimum time to Fill Cups
   vector<int> amount = {1, 4, 2};
   cout << leet.fillCups(amount);
+  
+  // First minimum positive integer
+  vector<int> nums = {1, 1, 2, 3, 4, 4};
+  cout << leet.firstMissingNumber(nums);
+  
   return 0;
 }
