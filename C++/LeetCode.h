@@ -10,4 +10,5 @@ class LeetCode
         int maxProduct(vector<int>& nums);
         string addSpaces(string s, vector<int>& spaces);
         int fillCups(vector<int>& amount);
+        int firstMissingNumber(vector<int>& nums);
 };
