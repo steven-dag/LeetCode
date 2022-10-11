@@ -23,7 +23,7 @@ string LeetCode::addSpaces(string s, vector<int>& spaces)
     return ans;
 }
 
-int fillCups(vector<int>& amount) {
+int LeetCode::fillCups(vector<int>& amount) {
     int seconds = 0;
     sort(amount.begin(), amount.end(), greater<int>());
     while (amount[0] > 0)
@@ -34,4 +34,26 @@ int fillCups(vector<int>& amount) {
         sort(amount.begin(), amount.end(), greater<int>());
     }
     return seconds;
+}
+
+
+int LeetCode::firstMissingNumber(vector<int>& nums)
+{   
+    int curr_min_num = 1;
+
+    sort(nums.begin(), nums.end());
+    nums.erase(unique(nums.begin(), nums.end()), nums.end());
+
+    for (int i=0; i<nums.size(); i++)
+    {
+        if (curr_min_num == nums[i])
+        {
+            curr_min_num += 1;
+        }
+        else if (nums[0] > 0)
+        {
+            return curr_min_num;
+        }
+    }
+    return curr_min_num;
 }
