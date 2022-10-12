@@ -27,5 +27,8 @@ int main()
   vector<int> nums = {1, 1, 2, 3, 4, 4};
   cout << leet.firstMissingNumber(nums);
   
+  vector<int> nums = {1,4,3,2};
+  cout << leet.arrayPairSum(nums);
+  
   return 0;
 }
