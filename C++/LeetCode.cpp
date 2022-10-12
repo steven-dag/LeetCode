@@ -57,3 +57,17 @@ int LeetCode::firstMissingNumber(vector<int>& nums)
     }
     return curr_min_num;
 }
+
+
+int LeetCode::arrayPairSum(vector<int>& nums) 
+{
+    sort(nums.begin(), nums.end());
+    int ans = 0;
+            
+    for (int i=0; i<nums.size(); i+=2)
+    {
+        ans += min(nums[i], nums[i+1]);
+    }
+    return ans;
+}
+
