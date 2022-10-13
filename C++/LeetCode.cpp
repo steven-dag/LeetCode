@@ -71,3 +71,20 @@ int LeetCode::arrayPairSum(vector<int>& nums)
     return ans;
 }
 
+
+int LeetCode::hardestWorker(int n, vector<vector<int>>& logs)
+{
+    int longest_time = logs[0][1], time = 0, id = logs[0][0];
+
+    for (int i=0; i<logs.size(); i++)
+    {
+        int task_time = abs(time-logs[i][1]);
+        if (task_time > longest_time || task_time == longest_time && id > logs[i][0])
+        {
+            longest_time = task_time;
+            id = logs[i][0];
+        }
+        time = logs[i][1];
+    }
+    return id;
+}
