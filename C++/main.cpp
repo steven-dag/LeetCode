@@ -33,5 +33,8 @@ int main()
   vector<vector<int>> logs = { {0,3}, {2,5}, {0,9}, {1,15}};
   cout << leet.hardestWorker(10, logs);
   
+  vector<int> nums = {1,2,2,1,1,3};
+  cout << leet.uniqueOccurrences(nums);
+  
   return 0;
 }
