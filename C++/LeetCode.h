@@ -12,4 +12,5 @@ class LeetCode
         int fillCups(vector<int>& amount);
         int firstMissingNumber(vector<int>& nums);
         int arrayPairSum(vector<int>& nums);
+        int hardestWorker(int n, vector<vector<int>>& logs);
 };
