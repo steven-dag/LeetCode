@@ -30,5 +30,8 @@ int main()
   vector<int> nums = {1,4,3,2};
   cout << leet.arrayPairSum(nums);
   
+  vector<vector<int>> logs = { {0,3}, {2,5}, {0,9}, {1,15}};
+  cout << leet.hardestWorker(10, logs);
+  
   return 0;
 }
