@@ -13,4 +13,5 @@ class LeetCode
         int firstMissingNumber(vector<int>& nums);
         int arrayPairSum(vector<int>& nums);
         int hardestWorker(int n, vector<vector<int>>& logs);
+        bool uniqueOccurrences(vector<int>& arr);
 };
