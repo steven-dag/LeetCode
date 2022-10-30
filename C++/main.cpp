@@ -36,5 +36,13 @@ int main()
   vector<int> nums = {1,2,2,1,1,3};
   cout << leet.uniqueOccurrences(nums);
   
+  Node* root = newNode(3);
+  root->left = newNode(9);
+  root->right = newNode(20);
+  root->right->left = newNode(15);
+  root->right->right = newNode(7);
+  
+  cout << leet.minDepth(root);
+  
   return 0;
 }
