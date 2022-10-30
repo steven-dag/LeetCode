@@ -14,4 +14,5 @@ class LeetCode
         int arrayPairSum(vector<int>& nums);
         int hardestWorker(int n, vector<vector<int>>& logs);
         bool uniqueOccurrences(vector<int>& arr);
+        int minDepth(TreeNode* root);
 };
